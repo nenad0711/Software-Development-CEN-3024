@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Classes-Objects-ProgrammingProject1/Classes-Objects-ProgrammingProject1.iml" filepath="$PROJECT_DIR$/Classes-Objects-ProgrammingProject1/Classes-Objects-ProgrammingProject1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fall 2022 BAS.iml" filepath="$PROJECT_DIR$/.idea/Fall 2022 BAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3-Exceptions/Module3-Exceptions.iml" filepath="$PROJECT_DIR$/Module3-Exceptions/Module3-Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3FMRadioStation/Module3FMRadioStation.iml" filepath="$PROJECT_DIR$/Module3FMRadioStation/Module3FMRadioStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nheritance-Polymorphism-ProgrammingProject2/nheritance-Polymorphism-ProgrammingProject2.iml" filepath="$PROJECT_DIR$/nheritance-Polymorphism-ProgrammingProject2/nheritance-Polymorphism-ProgrammingProject2.iml" />
+    </modules>
+  </component>
+</project>
