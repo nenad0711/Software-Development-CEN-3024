@@ -26,13 +26,12 @@ import org.jsoup.select.Elements;
 
 public class WordAnalyzer {
 	
-       public WordAnalyzer(String file) {
-    	   
-    	  sortedWords(file); 
-       }
        
-	// Method that takes URL address parameter, scrapes the web by using Jsoup Library and stores the content into file on the local computer
+	/** Scrape method takes the URL address parameter, scrapes the web by using Jsoup Library, and stores the content into a file on the local computer.
+        It also contains a call to the sortedWords() method that reads the scraped file from the local pc, sorts, and prints words to the console */
+	
     public static void scrape(String location) {
+    	
             ArrayList<String> scrapedList = new ArrayList<>();
 		try {
 			
@@ -62,18 +61,21 @@ public class WordAnalyzer {
 		catch (IOException e) {
 			e.printStackTrace();
      }
+		
+		sortedWords();
+		
     }   
        
        
        
  // Method that takes file address parameter, and returns the word frequencies of all words in the file in the Map structure (key-value pairs)      
        
-	public void sortedWords(String fileName){
+	public static void sortedWords(){
 	  try {
 			
         //iterate over file and place each word in ArrayList
 		ArrayList<String> result = new ArrayList<>();
-		Scanner scan = new Scanner(new FileReader(fileName)) ;
+		Scanner scan = new Scanner(new FileReader("C:\\output.txt")) ;
 		    while (scan.hasNext()) {
 		        result.add(scan.next());
 		    }
