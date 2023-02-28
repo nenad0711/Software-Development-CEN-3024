@@ -40,21 +40,23 @@ public class Fibonacci {
 		    }
 		   
 		  /**
-		   * This is the main method. Recursive and iterative methods for finding Fibonacci number are tested and timed in nano seconds.
+		   * This is the main method. Recursive and iterative methods for finding Fibonacci number are tested with increments of 5 and timed in nano seconds.
 		   * @param args Strings passed into the main
 		   */
 		      
 		    public static void main (String args[])
 		    {
-		        int n = 45;
+		        int n;
+		        for(n=1;n<=50;n+=5) {
 		        long startTime = System.nanoTime();
-		        System.out.println(fib(n));
+		        System.out.println("Fibonacci number:" + fib(n));
 		        long endTime = System.nanoTime();
-		        System.out.println(endTime-startTime);
+		        System.out.println("Timing for iterative approach: " + (endTime-startTime));
 		        startTime = System.nanoTime();
-		        System.out.println(fibonacciRecursive(n));
+		        System.out.println("Fibonacci number:" + fibonacciRecursive(n));
 		        endTime = System.nanoTime();
-		        System.out.println(endTime-startTime);
+		        System.out.println("Timing for recursive approach: " + (endTime-startTime));
+		        }
 		    }
 		}
 		
