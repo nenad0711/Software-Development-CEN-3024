@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="718.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ButtonBar layoutX="323.0" layoutY="207.0" prefHeight="39.0" prefWidth="164.0" />
+      <Label fx:id="input" layoutX="139.0" layoutY="295.0" prefHeight="25.0" prefWidth="116.0" text="Enter File Location">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="URL" layoutX="273.0" layoutY="293.0" prefHeight="25.0" prefWidth="329.0" />
+    <Button fx:id="genReport" layoutX="362.0" layoutY="334.0" mnemonicParsing="false" onAction="#scrape" prefHeight="32.0" prefWidth="151.0" style="-fx-border-color: black; -fx-border-radius: 5;" stylesheets="@application.css" text="Generate Report">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="words" layoutX="30.0" layoutY="61.0" prefHeight="514.0" prefWidth="233.0" style="-fx-border-color: black;">
+        <columns>
+            <TableColumn fx:id="one" prefWidth="53.0" text="#" />
+          <TableColumn fx:id="two" prefWidth="69.0" text="Word" />
+          <TableColumn fx:id="three" minWidth="0.0" prefWidth="110.0" text="Frequency" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="24.0" prefHeight="39.0" prefWidth="233.0" style="-fx-border-color: black;" stylesheets="@application.css" text="Word Analyzer" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+   </children>
+</Pane>
