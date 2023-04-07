@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.example.word_analyzer","l":"DBConn"},{"p":"com.example.word_analyzer","l":"MainController"},{"p":"com.example.word_analyzer","l":"Word"},{"p":"com.example.word_analyzer","l":"WordAnalyzer"}];updateSearchResults();
