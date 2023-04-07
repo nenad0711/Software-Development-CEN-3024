@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"application","l":"MainController"},{"p":"application","l":"Word"},{"p":"application","l":"WordAnalyzer"}];updateSearchResults();
